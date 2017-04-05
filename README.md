@@ -110,6 +110,7 @@ endfunction
 call asyncomplete#register_source({
     \ 'name': 'javascript',
     \ 'whitelist': ['javascript'],
+    \ 'priority': 5,
     \ 'completor': function('s:js_completor'),
     \ })
 ```
